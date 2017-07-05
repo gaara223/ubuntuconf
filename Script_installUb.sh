@@ -1,5 +1,6 @@
 #!/bin/bash
 echo -e "\n---- Actualizando OS----"
+sudo apt-get -f install
 sudo apt-get update
 sudo apt-get upgrade -y
 echo -e "\n---- Instalando PGsql----"
@@ -44,8 +45,10 @@ sudo apt-get install sublime-text-installer
 echo -e "\n----ahora instalaremos mi IDE preferido :D----"
 sudo apt-get install default-jre
 sudo apt-get install default-jdk
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
 sudo apt-get install oracle-java8-installer
-sudo wget https://netbeans.org/downloads/start.html?platform=linux&lang=en&option=all
+https://netbeans.org/downloads/start.html?platform=linux&lang=en&option=all
 cd~/Descargas
 sudo chmod +x netbeans-8.2-linux.sh
 sudo ./netbeans-8.2-linux.sh
